@@ -1,19 +1,27 @@
 package br.com.leadcodeti.backend_git_github_week.model;
 
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
+import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@Table(name = "\"user\"")
 public class User implements Serializable {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @EqualsAndHashCode.Include
     private Integer id;
-    private String nome;
+    private String name;
     private String email;
-    private String senha;
+    private String password;
     @ManyToMany
     @JoinTable(name = "users_roles",
             joinColumns = {
@@ -21,5 +29,5 @@ public class User implements Serializable {
             inverseJoinColumns = {
                 @JoinColumn(name = "role_id", referencedColumnName = "id")
             })
-    private List<Role> roles;
+    private Set<Role> roles;
 }
