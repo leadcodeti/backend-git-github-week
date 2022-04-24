@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class RegisterData {
-    private String nome;
+    private String name;
     private String email;
     private String password;
 }

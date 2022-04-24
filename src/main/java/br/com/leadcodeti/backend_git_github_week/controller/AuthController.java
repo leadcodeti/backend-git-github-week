@@ -1,4 +1,4 @@
-package br.com.leadcodeti.backend_git_github_week.Controller;
+package br.com.leadcodeti.backend_git_github_week.controller;
 
 import br.com.leadcodeti.backend_git_github_week.model.dto.form.LoginData;
 import org.springframework.web.bind.annotation.PostMapping;
