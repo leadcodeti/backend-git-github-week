@@ -2,7 +2,7 @@ package br.com.leadcodeti.backend_git_github_week.controller;
 
 import br.com.leadcodeti.backend_git_github_week.model.User;
 import br.com.leadcodeti.backend_git_github_week.model.dto.UserDto;
-import br.com.leadcodeti.backend_git_github_week.model.dto.form.RegisterData;
+import br.com.leadcodeti.backend_git_github_week.model.dto.input.RegisterData;
 import br.com.leadcodeti.backend_git_github_week.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,10 +1,9 @@
-package br.com.leadcodeti.backend_git_github_week.model.dto.form;
+package br.com.leadcodeti.backend_git_github_week.model.dto.input;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;

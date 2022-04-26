@@ -1,7 +1,7 @@
 package br.com.leadcodeti.backend_git_github_week.service;
 
 import br.com.leadcodeti.backend_git_github_week.model.User;
-import br.com.leadcodeti.backend_git_github_week.model.dto.form.LoginData;
+import br.com.leadcodeti.backend_git_github_week.model.dto.input.LoginData;
 import br.com.leadcodeti.backend_git_github_week.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

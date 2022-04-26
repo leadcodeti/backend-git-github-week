@@ -1,4 +1,4 @@
-package br.com.leadcodeti.backend_git_github_week.model.dto.form;
+package br.com.leadcodeti.backend_git_github_week.model.dto.input;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
