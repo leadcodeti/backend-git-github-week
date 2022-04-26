@@ -1,6 +1,5 @@
 package br.com.leadcodeti.backend_git_github_week.model.dto.form;
 
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
