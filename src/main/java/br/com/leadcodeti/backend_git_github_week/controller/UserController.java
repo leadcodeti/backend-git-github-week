@@ -3,7 +3,7 @@ package br.com.leadcodeti.backend_git_github_week.controller;
 import br.com.leadcodeti.backend_git_github_week.model.User;
 import br.com.leadcodeti.backend_git_github_week.model.dto.UserDto;
 import br.com.leadcodeti.backend_git_github_week.model.dto.input.RegisterData;
-import br.com.leadcodeti.backend_git_github_week.service.RegisterService;
+import br.com.leadcodeti.backend_git_github_week.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +13,10 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/register")
-public class RegisterController {
+public class UserController {
 
     @Autowired
-    RegisterService registerService;
+    UserService registerService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
