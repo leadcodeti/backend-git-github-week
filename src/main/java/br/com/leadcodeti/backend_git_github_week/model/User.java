@@ -16,8 +16,11 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
     private Integer id;
+    @Column(length = 30, nullable = false)
     private String name;
+    @Column(nullable = false, unique = true)
     private String email;
+    @Column(length = 30, nullable = false)
     private String password;
     @ManyToMany
     @JoinTable(name = "users_roles",
