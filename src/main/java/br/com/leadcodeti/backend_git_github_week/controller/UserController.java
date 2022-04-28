@@ -19,13 +19,14 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @CrossOrigin
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<UserDto> register(@Valid @RequestBody RegisterData registerData) {
         User usuario = userService.save(registerData);
         return ResponseEntity.ok(new UserDto(usuario.getId(), usuario.getName(), usuario.getEmail()));
     }
-
+    @CrossOrigin
     @GetMapping
     public List<UserDto> listUsers() {
         return userService.retrieve();
